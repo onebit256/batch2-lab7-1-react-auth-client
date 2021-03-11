@@ -8,15 +8,9 @@ class Menu extends Component {
         value: PropTypes.string
     }
 
-
-    constructor(props) {    
-        super(props);    
-    }
-
 	static contextType = UserContext;
 	
     render() {
-		let c = this.context;
       return (
 		<div className="layui-header">
 			<div className="layui-logo">区块链LOGO</div>

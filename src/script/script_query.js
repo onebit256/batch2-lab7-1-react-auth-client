@@ -15,14 +15,9 @@ const RPC_URL = 'http://127.0.0.1:7545'
       const proofofexistence = new web3Instance.eth.Contract(PROOFOEXISTENCE_ABI.abi, PROOFOEXISTENCE_ADDRESS)
 
     async function storeData() {
-
-    
-      
       const poe = await proofofexistence.methods
-          .verifyHash(USER_ADDRESS,'0x1221c3').call()
-         
+          .verifyHash(USER_ADDRESS,'rw').call()
       console.log(poe)
-     
     }
 
     storeData()

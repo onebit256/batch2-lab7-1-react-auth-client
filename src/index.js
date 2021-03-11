@@ -4,9 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+  BrowserRouter as Router
 } from "react-router-dom";
 import { createHashHistory } from 'history';
 import UserContextProvider from './context/currentUser'

@@ -5,7 +5,7 @@ import qs from 'qs';
 // import AuthService from '../services/AuthService';
 import { withRouter } from "react-router-dom";
 import {UserContext} from '../context/currentUser';
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
 
 const API_URL = 'http://127.0.0.1:8000/account/api/login';
 
@@ -41,7 +41,7 @@ class Login extends Component {
 		
 		if (typeof(response) !== 'undefined') {
 			jwt_token= response.data.Token
-			localStorage.setItem("user", JSON.stringify(response.data));
+			window.localStorage.setItem("user", JSON.stringify(response.data));
             this.context.setCurrentUser(jwt_token) 
             this.props.history.push('/');
 		  }

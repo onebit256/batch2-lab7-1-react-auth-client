@@ -18,7 +18,7 @@ const RPC_URL = 'http://127.0.0.1:7545'
     
       
       const poe = await proofofexistence.methods
-          .storeHash('0x1221c3')
+          .storeHash('0x1221c3biccngdddsa')
           .encodeABI({ from: USER_ADDRESS })
       
       const tx = {
