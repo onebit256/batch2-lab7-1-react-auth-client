@@ -44,7 +44,7 @@ class Menu extends Component {
 				  <dd><a href="">安全设置</a></dd>
 				</dl>
 			  </li>
-			  <li className="layui-nav-item"><a href="" onClick={this.context.logout()}>退出</a></li>
+			  <li className="layui-nav-item" onClick={this.context.logout}><a href="">退出</a></li>
 			</ul>
 		  </div>
       );
