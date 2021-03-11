@@ -1,6 +1,6 @@
 // add to Ipfs - this can be a string, a Buffer, a stream of Buffers, etc
 // returns the hash
-import config from '../config';
+// import config from '../config';
 const IpfsHttpClient  = require('ipfs-http-client');
 // const globSource = require('ipfs-utils/src/files/glob-source')
 // const IPFS = require('ipfs-core')
@@ -11,7 +11,7 @@ class IpfsService {
     
     constructor() {     
         // const gg =new URL(IPFS_URL);
-        this.IpfsHttpC = IpfsHttpClient({ host: config.host, port: config.port, protocol: config.protocol });        
+        this.IpfsHttpC = IpfsHttpClient({ host: '', port: '', protocol: '' });        
         const p =0;
     }
 
